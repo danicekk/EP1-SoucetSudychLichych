@@ -1,12 +1,14 @@
 Imports System
+Imports System.Reflection.Metadata.Ecma335
 
 Module Program
-  Sub Main(args As String())
-        Dim cislo As Integer = 1
+    Sub Main(args As String())
+        Dim cislo As Integer
+        Dim suda As Integer = 2
+        Dim licha As Integer = 1
 
-        Console.WriteLine(" Zadej vhodné èíslo ")
+        Console.WriteLine(" Zadejte 10 libovolných èísel a každé èíslo odøádkujte endtrem ")
         cislo = Console.ReadLine
-
 
         If Not IsNumeric(cislo) Then
             Console.WriteLine("VSTUP MUSÍ BÝT ÈÍSLO!")
@@ -19,4 +21,5 @@ Module Program
         End If
 
     End Sub
+
 End Module
