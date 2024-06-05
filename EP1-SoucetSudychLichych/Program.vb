@@ -8,6 +8,11 @@ Module Program
         cislo = Console.ReadLine
 
 
+        If Not IsNumeric(cislo) Then
+            Console.WriteLine("VSTUP MUSÕ B›T »ÕSLO!")
+            Console.ReadKey()
+        End If
+
         If cislo < 1 Then
             Console.WriteLine(" Minim·lnÌ zadanÈ ËÌslo musÌ b˝t 1")
             Console.ReadKey()
